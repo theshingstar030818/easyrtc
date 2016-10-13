@@ -427,7 +427,8 @@ The idea of a media server is that everybody sends their local media to the medi
 <H3> The Peer To Server Limitation </H3>
 Currently, the EasyRTC server runs on a single Node.js instance. 
 That means it is limited by the amount of memory and the number of 
-ports the node.js instance has access to. It shouldn't be a problem to have 10,000 or maybe even 20,000 clients connecting to the server. 
+ports the node.js instance has access to. It can also only send out and receive messages so fast.
+The number of clients it can support can range from hundreds to thousands, depending on how much demand your application puts on the server.
 
 This also means the EasyRTC server isn't as robust as you want for a production system. If the host running the server process goes down, the service fails.
 
