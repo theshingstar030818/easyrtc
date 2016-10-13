@@ -1,14 +1,14 @@
 <html>
 <head>
   <title>
-    Getting Started - Zero to Hero
+    Getting Started with WebRTC using EasyRTC Open Source
   </title>
   <style>
          code { font-weight:bold; margin-left: 20px;}
   </style>
 </head>
 <body>
-<H1> Getting Started - Zero To Hero</H1>
+<H1>Getting Started with WebRTC using EasyRTC Open Source</H1>
 <p>
 Prerequesites: You should be comfortable with both HTML and Javascript. 
 </p>
@@ -286,12 +286,17 @@ Each button has a callback that generates a call to a particular peer.
 </p>
 
 <p> 
-The performCall method takes an easyrtcid and requests a call to it. The easyApp method we
-used to initialize the connection sets up callbacks to populate a video object with the 
-media stream received from the peer.
+The performCall method takes a peer's easyrtcid and requests a call to it. When the call is established
+and a remote media stream is received from the peer, a callback (implicitly set up by 
+the easyApp method) will attach that media stream to the first available video object.
+
+The easyApp method we
+used to initialize the connection sets up callbacks; one of the callbacks attaches a
+media stream received from the peer to a free video object, another callback clears a video object
+when the associated media stream ends.
 </p>
 
-<p>This application just scratches on the surface of the EasyRTC api.</p>
+<p>This application just scratches on the surface of the EasyRTC API.</p>
 
 <H2> Hosting on a server - "Let My Clients Go" </H2>
 There are three parts to hosting your application on a server.
