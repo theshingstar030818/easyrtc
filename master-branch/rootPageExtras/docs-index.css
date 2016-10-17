@@ -1,0 +1,531 @@
+/*
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+*/
+
+
+/* Selector change by Chris */
+/* h1, ul, li { */
+#sidebar h1, #sidebar ul, #sidebar li {
+  margin:0px;
+  padding:0px;
+}
+
+
+#subheader {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:#CBCBCB;
+  background:-webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0.0, #F9F9F9),
+    color-stop(1.0, #CBCBCB)
+  );
+  background:-moz-linear-gradient(center bottom , #CBCBCB 0%, #F9F9F9 100%);
+  border-top:1px solid #383A3C;
+  border-bottom:1px solid #919395;
+  height:32px;
+/*  position:fixed;
+  top:0px;
+*/
+  width:100%;
+  z-index:1;
+}
+
+div#sidebar {
+  min-height:860px;
+  clear:both;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  display:inline-block; /* Added by Chris */
+  background-color:#ECEAE7;
+  border-bottom:1px solid #ccc;
+  border-right:1px solid #ccc;
+  left:-1px;
+  position:absolute;
+  overflow:auto;
+  padding:0px 10px 0px 10px; /* Value change by Chris, was '20px 40px 0px 0px' */
+  /* position:fixed;
+  bottom:0px;
+  top:34px;
+   */
+  width:220px;
+  z-index:1;
+}
+#scrollable {
+
+    margin-top:1.0em;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*
+  bottom:0px;
+  top:34px;
+    */
+	position:relative; /* Added by Chris */
+
+	padding:0; /* Added by Chris */
+  display:inline-block; /* Added by Chris */
+  /* left:220px; */ /* Commented out by Chris */
+  margin-left:220px;
+  /* right:0px; */ /* Commented out by Chris */
+  /* position:absolute; */ /* Commented out by Chris */
+  overflow:auto;
+}
+#content {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height:1200px;
+/*  top:64px;*/
+/*  bottom:0px;*/
+/*  right:0px;*/
+/*  left:220px;*/
+/*  margin:64px auto 0px 220px;*/
+  margin:0px 20px 20px 30px; /* Value changed by Chris, was '20px 60px' */
+/*  position:absolute;*/
+/*  overflow:auto;*/
+  z-index:0;
+}
+
+#header h1,
+#header h1 a,
+#subheader h1 {
+  color:#F6F4F2;
+  font-size:18px;
+  font-weight:normal;
+  line-height:32px;
+  margin:0px;
+  text-align:center;
+  text-shadow:0px -1px 1px #222222;
+}
+
+#header h1 a strong {
+  font-weight:bold;
+}
+
+#header h1 {
+  text-align:left;
+  margin-left:20px;
+}
+
+#subheader h1 {
+  height:32px;
+  color:#000000;
+  overflow:hidden;
+  text-shadow:#FFFFFF 0px 1px 0px;
+  clear:none;
+  padding:0;
+  margin:0;
+}
+
+#header small,
+#subheader small {
+
+  text-align:right;
+
+  color:#EFEFEF;
+  font-size:14px;
+  line-height:32px;
+
+  float:right;
+  clear:none;
+  margin:-32px 0 0 0;
+
+  /* position:absolute; */ /* Commented out by Chris */
+  /* top:0px; */
+  /* right:20px; */
+  text-shadow:-1px 1px 1px #666666;
+}
+
+#sidebar .vertical_divider {
+  background-color:#CCCCCC;
+  bottom:0px;
+  border-right:1px solid #FFFFFF;
+  position:absolute;
+  top:0px;
+  right:0px;
+  left:1px;
+  width:1px;
+}
+
+#sidebar h1 {
+  color:#000000;
+  height:auto; /* Added by Chris */
+  font-size:18px;
+  padding:0px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  font-weight:normal;
+  text-shadow:#FFFFFF 0px 1px 0px;
+}
+
+#sidebar ul {
+  margin:0 0 0 24px; /* Value change by Chris, was '0px' */
+  padding:0 0 0 6px; /* Value change by Chris, was '0px' */
+}
+
+#sidebar li,
+#sidebar li a {
+  color:#767573;
+  font-size:14px;
+  list-style:disc; /* Value change by Chris, was 'none' */
+  margin:10px 0px;
+  text-shadow:#FFFFFF 0px 1px 1px;
+}
+#sidebar li a {
+  -webkit-transition:color .15s ease-out;
+  -moz-transition:color .15s ease-out;
+  -o-transition:color .15s ease-out;
+}
+#sidebar li a:hover {
+  /* color:#242220; */
+  -webkit-transition:color .15s ease-in;
+  -moz-transition:color .15s ease-in;
+  -o-transition:color .15s ease-in;
+}
+
+#sidebar li.indexDepth0, /* Selector added by Chris */
+.indexDepth0 {
+    /* padding-left: 0; */ /* Commented out by Chris */
+	margin-left:0; /* Added by Chris */
+}
+
+#sidebar li.indexDepth1, /* Selector added by Chris */
+.indexDepth1{
+   /* padding-left:1em; */ /* Commented out by Chris */
+   margin-left:1.0em; /* Added by Chris */
+}
+
+#sidebar li.indexDepth2, /* Selector added by Chris */
+.indexDepth2 {
+    /* padding-left: 2.0em; */ /* Commented out by Chris */
+    margin-left:2em; /* Added by Chris */
+}
+
+#sidebar li.indexDepth3, /* Selector added by Chris */
+.indexDepth3 {
+    /* padding-left: 3.0em; */ /* Commented out by Chris */
+    margin-left:3.0em; /* Added by Chris */
+}
+
+
+
+#otherbar {
+  display:none;
+}
+
+#content {
+  font-size:13px;
+  line-height:160%;
+  max-width:750px;
+}
+
+
+#content h1 {
+  border-bottom:2px solid;
+  font-size:2em;
+  height:auto; /* Added by Chris */
+  font-weight:normal;
+  margin:1.0em 0px 1.3em 0px; /* Value change by Chris, was '2.0em 0px 1.3em 0px' */
+  padding:0;
+  padding-bottom:30px; /* Value change by Chris, was '0.6em' */
+}
+
+#content h2 {
+  /* color:#242220; */
+  color:#F1632D;
+  font-size:1.4em;
+  font-weight:bold;
+  margin:2.0em 0 0.8em 0; /* Value change by Chris, was '1.3em 0px 0.8em 0px' */
+  text-shadow:#FFFFFF 0px 1px 1px;
+}
+#content h3 {
+  font-size:1.1em;
+  font-weight:bold;
+  margin:0.8em 0px 0.5em 0px;
+  text-shadow:#FFFFFF 0px 1px 1px;
+}
+
+hr {
+  display:none;
+  border:none;
+  margin:40px 0px;
+  border-top:1px solid #CCCCCC;
+  border-bottom:1px solid #FFFFFF;
+}
+
+p,blockquote,pre,ul {
+  margin:1em 0px;
+}
+
+blockquote {
+  color:#767573;
+	font-style:normal;
+  margin-left:35px;
+  padding-left:20px;
+	position:relative;
+	text-shadow:#FFFFFF 0px 1px 0px;
+}
+blockquote code {
+	font-style: normal;
+}
+blockquote p {
+  padding:10px 0px;
+}
+blockquote::before {
+  font-style: normal;
+  content: '\201C';
+  font-size: 450%;
+  font-family:Georgia, Palatino, 'Times New Roman', Times;
+  position: absolute;
+  left: -25px;
+  top:0.3em;
+  color: #E0E0E0;
+}
+
+ul {
+  margin-left:0;
+  padding:0;
+}
+ul > li {
+	list-style:disc;
+	list-style-position:outside;
+	padding:0;
+	margin-left:32px;
+}
+ul ul {
+  margin-bottom:0.5em;
+  margin-top:0.5em;
+  padding:0;
+  margin-left:0;
+}
+
+
+
+code {
+	font-family:"DejaVu", "Monaco", "Courier New", "Courier";
+	font-size:90%;
+	padding:2px 4px;
+	white-space:pre-wrap;
+}
+
+pre {
+/*    border:1px solid #CCCCCC;*/
+    background:#F2F0EE;
+    -webkit-border-radius:11px;
+    -moz-border-radius:11px;
+    border-radius:11px;
+    display:block;
+    line-height:110%;
+    margin:1.5em 0px 3em 0px;
+    padding:15px 20px;
+    white-space:pre-wrap;
+}
+pre code {
+  background:none;
+	border:none;
+	font-size:11px;
+	padding:0px;
+}
+
+/* Selector changed by Chris */
+/* a[href] { */
+#content a[href] {
+/*  color:inherit;*/
+  /* color:#F06433; */
+  /* text-decoration:none; */
+  text-shadow:#FFF 0px 1px 0px;
+}
+/* Selector changed by Chris */
+/* a[href]:hover { */
+#content a[href]:hover {
+  /* color:#d0410f; */
+}
+
+#content a,
+#content a:link
+{
+	color:#0000FF;
+	text-decoration:none;
+}
+
+#content a:visited
+{
+	color:#800080;
+	text-decoration:none;
+}
+
+#content a:active
+{
+	color:#FF0000;
+	text-decoration:none;
+}
+
+#content a:hover
+{
+	text-decoration:underline;
+}
+
+
+
+.prettyprint a[href],
+.prettyprint a[href] span {
+  text-decoration:underline;
+  text-shadow:none;
+}
+.prettyprint a[href] :hover,
+.prettyprint a[href] span :hover {
+  text-decoration:none;
+}
+
+/* Selector changed by Chris */
+/* code a[href] { */
+#content code a[href] {
+  color:inherit;
+/*  border-bottom:1px dotted #000000;*/
+  text-decoration:underline;
+}
+/* Selector changed by Chris */
+/* code a[href]:hover { */
+#content code a[href]:hover {
+  color:inherit;
+  text-decoration:none;
+}
+/* Selector changed by Chris */
+/* a[href].external:after { */
+#content a[href].external:after {
+	content: "*";
+	font-style: super;
+	opacity: .5;
+}
+
+#index {
+	-webkit-column-width: 235px;
+	-webkit-column-rule-width: 5px;
+	-moz-column-width: 235px;
+	-moz-column-rule-width: 5px;
+	column-width: 235px;
+	column-rule-width: 5px;
+}
+
+#index h2:after,
+#index h3:after {
+  content:"";
+}
+
+#index h2 {
+  margin:0px;
+  padding:0px;
+}
+
+#index {
+  padding: 10px 1px;
+}
+
+#index ul {
+	margin:0px 0px 30px 0px;
+	padding:0;
+}
+
+#index ul li {
+	list-style: none;
+}
+
+
+#index ul li a {
+
+}
+
+#home h1 {
+  border-bottom:1px solid #919395;
+  padding-bottom:30px; /* Value changed by Chris, was '20px' */
+  margin:30px 0px;
+}
+
+#home h2 {
+  font-weight:normal;
+  margin:0px 0px 10px 0px;
+  padding:0px;
+}
+
+#home h2:after {
+  content:'';
+}
+
+#home h2 a {
+  text-shadow:#FFFFFF 0px 1px 1px;
+}
+
+#home span {
+  color:#8B8078;
+  font-size:14px;
+  text-shadow:#FFFFFF 0px 1px 0px;
+}
+
+#home ul {
+  float:left;
+  margin:0px;
+  padding:0px;
+}
+#home ul li {
+  float:left;
+  height:120px;
+  list-style:none;
+  margin:0px;
+  padding:0px 20px;
+  width:200px;
+}
+
+/*
+Class compatability tables "compat";
+Apply nested TD classes "y"/"n", "p" (partial), or "u" (unknown).
+Results in green/red/gold/gray background & auto-inserts check/X char.
+Assumes table is 2D grid, with single TH preceding TDs in body of table.
+*/
+
+.compat .y { background-color: lightgreen; }
+.compat .y::before { content: "\2714";     margin-right: 6px;  }
+
+.compat .n { background-color: pink; }
+.compat .n::before { content: "\2718"; margin-right: 6px;  }
+
+.compat .p { background-color: gold; }
+
+.compat .u { background-color: #dddddd; }
+
+/* center cell & straddled column heads by default */
+
+.compat td , th[colspan]:first-of-type { text-align: center }
+.compat tr>th:first-of-type { text-align: right }
+
+/* Classes added by Chris */
+
+div.contentContainer ul,
+div.contentContainer ul li,
+div.contentContainer ul.inheritance,
+div.contentContainer ul.inheritance li
+{
+	list-style-type:none;
+}
+
+div.subTitle
+{
+	margin-bottom:1.6em;
+}
+
+#content h2.subtitle.subtitle-overview,
+#content h2.subtitle.subtitle-tasks
+{
+	margin-top:1.0em;
+}
