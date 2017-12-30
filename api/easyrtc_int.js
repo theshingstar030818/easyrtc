@@ -4562,9 +4562,11 @@ var Easyrtc = function() {
                    }
 
                    self.sendPeerMessage(easyrtcid, "__gotAddedMediaStream", {
-                    sdp: sessionDescription
+                        sdp: sessionDescription
                    });
+
                    peerConns[easyrtcid].connectionAccepted = true;
+                   
                    sendQueuedCandidates(easyrtcid, onSignalSuccess, onSignalFailure);
                };
 
